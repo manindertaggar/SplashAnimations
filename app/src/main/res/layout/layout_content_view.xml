@@ -3,14 +3,115 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
-    android:gravity="center">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="---"
-        android:textColor="#111"
-        android:textSize="35sp" />
-    
+    <View
+        android:layout_width="160dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="280dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="70dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="160dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="280dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="70dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="160dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="280dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="70dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:layout_margin="10dp"
+        android:background="#aaa" />
+
 </LinearLayout>
