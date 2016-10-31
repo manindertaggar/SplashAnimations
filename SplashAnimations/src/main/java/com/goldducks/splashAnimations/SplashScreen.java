@@ -1,4 +1,4 @@
-package com.goldducks.splashanimations;
+package com.goldducks.splashAnimations;
 
 import android.content.Context;
 import android.util.Log;

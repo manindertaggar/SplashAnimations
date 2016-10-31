@@ -1,7 +1,9 @@
-package com.goldducks.splashanimations;
+package com.goldducks.test;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.goldducks.splashAnimations.SplashScreen;
 
 public class MainActivity extends Activity {
 
@@ -10,6 +12,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         SplashScreen.show(this, SplashScreen.TERMINAL_ANIMATION);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.layout_content_view);
     }
 }

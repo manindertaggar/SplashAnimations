@@ -1,4 +1,4 @@
-package com.goldducks.splashanimations;
+package com.goldducks.splashAnimations;
 
 import android.content.Context;
 import android.graphics.PixelFormat;
@@ -26,16 +26,20 @@ public class DrawingMaster {
         mContext = context;
         windowManager = (WindowManager) mContext.getSystemService(WINDOW_SERVICE);
         params = new WindowManager.LayoutParams(
-                WindowManager.LayoutParams.WRAP_CONTENT,
-                WindowManager.LayoutParams.WRAP_CONTENT,
+                WindowManager.LayoutParams.MATCH_PARENT,
+                WindowManager.LayoutParams.MATCH_PARENT,
                 WindowManager.LayoutParams.TYPE_APPLICATION,
-                WindowManager.LayoutParams.FLAG_DIM_BEHIND,
+                WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
                 PixelFormat.TRANSLUCENT);
 
     }
 
     public void draw(View view) {
         windowManager.addView(view, params);
+    }
+
+    public void erase(View view) {
+        windowManager.removeView(view);
     }
 
     public static DrawingMaster getInstance() {

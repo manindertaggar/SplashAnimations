@@ -1,4 +1,4 @@
-package com.goldducks.splashanimations;
+package com.goldducks.splashAnimations;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
@@ -34,49 +34,35 @@ class TerminalAnimation {
     public void start() {
 
 
-        centerView =
+        centerView = contentView.findViewById(R.id.centerView);
 
-                contentView.findViewById(R.id.centerView);
+        parentView = contentView.findViewById(R.id.parentView);
 
-        parentView =
+        bottomView = contentView.findViewById(R.id.bottomView);
 
-                contentView.findViewById(R.id.parentView);
+        topView = contentView.findViewById(R.id.topView);
 
-        bottomView =
+        bottomViewGreenLine = contentView.findViewById(R.id.bottomViewGreenLine);
 
-                contentView.findViewById(R.id.bottomView);
+        topViewGreenLine = contentView.findViewById(R.id.topViewGreenLine);
 
-        topView =
+        parentView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+                                                                       @Override
+                                                                       public void onGlobalLayout() {
+                                                                           parentHeight = parentView.getHeight();
+                                                                           parentWidth = parentView.getWidth();
 
-                contentView.findViewById(R.id.topView);
+                                                                           setFlapHeights();
+                                                                           blink(centerView);
+                                                                           if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                                                                               parentView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                                                                           } else {
+                                                                               parentView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                                                                           }
+                                                                       }
+                                                                   }
 
-        bottomViewGreenLine =
-
-                contentView.findViewById(R.id.bottomViewGreenLine);
-
-        topViewGreenLine =
-
-                contentView.findViewById(R.id.topViewGreenLine);
-
-        parentView.getViewTreeObserver().
-
-                addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-                                              @Override
-                                              public void onGlobalLayout() {
-                                                  parentHeight = parentView.getHeight();
-                                                  parentWidth = parentView.getWidth();
-
-                                                  setFlapHeights();
-                                                  blink(centerView);
-                                                  if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                                                      parentView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-                                                  } else {
-                                                      parentView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-                                                  }
-                                              }
-                                          }
-
-                );
+        );
 
     }
 
@@ -172,6 +158,27 @@ class TerminalAnimation {
         ObjectAnimator animator = new ObjectAnimator();
         animator.setDuration(250);
         animator.setIntValues(reduceFrom, reduceTo);
+        animator.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                DrawingMaster.getInstance().erase(contentView);
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animation) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animation) {
+
+            }
+        });
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
