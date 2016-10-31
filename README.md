@@ -13,7 +13,7 @@ Grab the latest via Gradle</br>
 in onCreate method of your very first activity
 
 ```java
-@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         //add this Line 
         SplashScreen.show(this, SplashScreen.TERMINAL_ANIMATION);
@@ -25,9 +25,9 @@ in onCreate method of your very first activity
    Now everytime this activity runs, a Splash Screen will run.
    
 ## Upcoming Features:
- -Set Duration for Splash Screen.
- -Passing any custom layout to set it as Splash Screen.
- -SplashScreen animation over start and stop Listener.
- -Custom stoping of SplashScreen.
- -and ofcourseMany Many splash animations
+ -Set Duration for Splash Screen.</br>
+ -Passing any custom layout to set it as Splash Screen.</br>
+ -SplashScreen animation over start and stop Listener.</br>
+ -Custom stoping of SplashScreen.</br>
+ -and ofcourseMany Many splash animations.</br>
  
