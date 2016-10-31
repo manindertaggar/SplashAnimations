@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#111">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <View
+            android:id="@+id/topViewGreenLine"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="#0f0"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#111">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <View
+            android:id="@+id/bottomViewGreenLine"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"
+            android:background="#0f0"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/centerView"
+        android:layout_width="15dp"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#0f0" />
+
+
+</RelativeLayout>
