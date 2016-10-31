@@ -1,0 +1,6 @@
+{
+  "name": "Splashanimations",
+  "tagline": "Terminal Screen animation for Android as SplashScreen",
+  "body": "Automated Splash Screen for android apps.\r\n\r\n# Download\r\n\r\nGrab the latest via Gradle</br>\r\n\r\n## `compile 'com.goldducks:splashanimations:0.0.1'`\r\n\r\n# Usage\r\nin onCreate method of your very first activity\r\n\r\n```java\r\n@Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        //add this Line \r\n        SplashScreen.show(this, SplashScreen.TERMINAL_ANIMATION);\r\n        setContentView(R.layout.layout_content_view);\r\n    \r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
