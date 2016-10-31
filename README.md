@@ -3,6 +3,8 @@ Automated Splash Screen for android apps.
 Note:   This project is under development.
         You can help dev. in bug fixes and with your awesome ideas for Universal. SplashScreens
 
+Curruntly there is only one Splash Screen Animation. i.e. TerminalAnimation (but Yes, its awesome.)
+
 ### Download
 
 Grab the latest via Gradle</br>
