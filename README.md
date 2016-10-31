@@ -7,7 +7,7 @@ Note:   This project is under development.
 
 Grab the latest via Gradle</br>
 
-### `compile 'com.goldducks:splashanimations:0.0.1'`
+ `compile 'com.goldducks:splashanimations:0.0.1'`
 
 ### Usage
 in onCreate method of your very first activity
