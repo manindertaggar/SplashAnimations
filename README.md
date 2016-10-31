@@ -33,3 +33,4 @@ in onCreate method of your very first activity
  -Custom stoping of SplashScreen.</br>
  -and ofcourseMany Many splash animations.</br>
  
+![Terminal](https://github.com/manindersingh030/SplashAnimations/blob/master/terminal.gif?raw=true)
