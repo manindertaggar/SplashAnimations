@@ -9,7 +9,7 @@ Curruntly there is only one Splash Screen Animation. i.e. TerminalAnimation (but
 
 Grab the latest via Gradle</br>
 
- `compile 'com.goldducks:splashanimations:0.0.1'`
+ `compile 'com.goldducks:splashAnimations:0.0.1'`
 
 ### Usage
 in onCreate method of your very first activity
