@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Terminal Animation</string>
+    <string name="pick_a_splash_animation">Pick a splash animation</string>
+    <string name="animation_terminal">Terminal</string>
+    <string name="animation_fade">Fade</string>
+    <string name="animation_zoom">Zoom</string>
+    <string name="animation_slide_up">Slide Up</string>
+    <string name="animation_curtain">Curtain</string>
+    <string name="animation_circular_reveal">Circular Reveal</string>
+    <string name="animation_pulse">Pulse</string>
+    <string name="animation_rotate_loader">Rotate Loader</string>
+    <string name="animation_bounce_dots">Bounce Dots</string>
+    <string name="animation_typewriter">Typewriter</string>
+    <string name="animation_gradient_wave">Gradient Wave</string>
+    <string name="animation_ripple">Ripple</string>
 </resources>

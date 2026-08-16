@@ -4,9 +4,7 @@ import android.animation.Animator;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
-import android.os.Build;
 import android.os.Handler;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
@@ -16,35 +14,30 @@ import android.view.animation.DecelerateInterpolator;
  * Created by Maninder Taggar on 26/10/16.
  */
 
-class TerminalAnimation {
+class TerminalAnimation extends BaseSplashAnimation {
     View centerView, parentView;
     View bottomView, topView;
     View bottomViewGreenLine, topViewGreenLine;
     int parentHeight, parentWidth;
-    View contentView;
 
-    public TerminalAnimation(Context context) {
-        contentView = LayoutInflater.from(context).inflate(R.layout.layout_splash_animation, null);
-        if (DrawingMaster.requiresIntialization())
-            new DrawingMaster(context);
-        DrawingMaster.getInstance().draw(contentView);
+    TerminalAnimation(Context context) {
+        super(context, R.layout.layout_splash_animation);
     }
 
+    @Override
+    void start() {
 
-    public void start() {
+        centerView = findViewById(R.id.centerView);
 
+        parentView = findViewById(R.id.parentView);
 
-        centerView = contentView.findViewById(R.id.centerView);
+        bottomView = findViewById(R.id.bottomView);
 
-        parentView = contentView.findViewById(R.id.parentView);
+        topView = findViewById(R.id.topView);
 
-        bottomView = contentView.findViewById(R.id.bottomView);
+        bottomViewGreenLine = findViewById(R.id.bottomViewGreenLine);
 
-        topView = contentView.findViewById(R.id.topView);
-
-        bottomViewGreenLine = contentView.findViewById(R.id.bottomViewGreenLine);
-
-        topViewGreenLine = contentView.findViewById(R.id.topViewGreenLine);
+        topViewGreenLine = findViewById(R.id.topViewGreenLine);
 
         parentView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
                                                                        @Override
@@ -54,11 +47,7 @@ class TerminalAnimation {
 
                                                                            setFlapHeights();
                                                                            blink(centerView);
-                                                                           if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                                                                               parentView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-                                                                           } else {
-                                                                               parentView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-                                                                           }
+                                                                           parentView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                                                                        }
                                                                    }
 
@@ -166,7 +155,7 @@ class TerminalAnimation {
 
             @Override
             public void onAnimationEnd(Animator animation) {
-                DrawingMaster.getInstance().erase(contentView);
+                finish();
             }
 
             @Override
