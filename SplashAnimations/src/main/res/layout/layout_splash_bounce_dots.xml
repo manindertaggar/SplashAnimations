@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_bg_dark"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/dotOne"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape_circle"
+        android:backgroundTint="@color/splash_accent_pink" />
+
+    <View
+        android:id="@+id/dotTwo"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape_circle"
+        android:backgroundTint="@color/splash_accent_pink" />
+
+    <View
+        android:id="@+id/dotThree"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape_circle"
+        android:backgroundTint="@color/splash_accent_pink" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splash_bg_dark">#0D1117</color>
+    <color name="splash_accent_green">#00E676</color>
+    <color name="splash_accent_indigo">#3F51B5</color>
+    <color name="splash_accent_teal">#009688</color>
+    <color name="splash_accent_coral">#FF5252</color>
+    <color name="splash_accent_amber">#FFC107</color>
+    <color name="splash_accent_purple">#7C4DFF</color>
+    <color name="splash_accent_blue">#2196F3</color>
+    <color name="splash_accent_pink">#E91E63</color>
+    <color name="splash_white">#FFFFFF</color>
+</resources>

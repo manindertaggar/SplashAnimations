@@ -1,117 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="#fff">
 
-    <View
-        android:layout_width="160dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <View
-        android:layout_width="200dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/pick_a_splash_animation"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-    <View
-        android:layout_width="150dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
+        <Button
+            android:id="@+id/buttonTerminal"
+            style="@style/SplashDemoButton"
+            android:text="@string/animation_terminal" />
 
-    <View
-        android:layout_width="280dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
+        <Button
+            android:id="@+id/buttonFade"
+            style="@style/SplashDemoButton"
+            android:text="@string/animation_fade" />
 
-    <View
-        android:layout_width="70dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
+        <Button
+            android:id="@+id/buttonZoom"
+            style="@style/SplashDemoButton"
+            android:text="@string/animation_zoom" />
 
-    <View
-        android:layout_width="300dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
+        <Button
+            android:id="@+id/buttonSlideUp"
+            style="@style/SplashDemoButton"
+            android:text="@string/animation_slide_up" />
 
-    <View
-        android:layout_width="160dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
+        <Button
+            android:id="@+id/buttonCurtain"
+            style="@style/SplashDemoButton"
+            android:text="@string/animation_curtain" />
 
-    <View
-        android:layout_width="200dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
+        <Button
+            android:id="@+id/buttonCircularReveal"
+            style="@style/SplashDemoButton"
+            android:text="@string/animation_circular_reveal" />
 
-    <View
-        android:layout_width="150dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
+        <Button
+            android:id="@+id/buttonPulse"
+            style="@style/SplashDemoButton"
+            android:text="@string/animation_pulse" />
 
-    <View
-        android:layout_width="280dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
+        <Button
+            android:id="@+id/buttonRotateLoader"
+            style="@style/SplashDemoButton"
+            android:text="@string/animation_rotate_loader" />
 
-    <View
-        android:layout_width="70dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
+        <Button
+            android:id="@+id/buttonBounceDots"
+            style="@style/SplashDemoButton"
+            android:text="@string/animation_bounce_dots" />
 
-    <View
-        android:layout_width="300dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
+        <Button
+            android:id="@+id/buttonTypewriter"
+            style="@style/SplashDemoButton"
+            android:text="@string/animation_typewriter" />
 
-    <View
-        android:layout_width="160dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
+        <Button
+            android:id="@+id/buttonGradientWave"
+            style="@style/SplashDemoButton"
+            android:text="@string/animation_gradient_wave" />
 
-    <View
-        android:layout_width="200dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
+        <Button
+            android:id="@+id/buttonRipple"
+            style="@style/SplashDemoButton"
+            android:text="@string/animation_ripple" />
 
-    <View
-        android:layout_width="150dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
+    </LinearLayout>
 
-    <View
-        android:layout_width="280dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
-
-    <View
-        android:layout_width="70dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
-
-    <View
-        android:layout_width="300dp"
-        android:layout_height="10dp"
-        android:layout_margin="10dp"
-        android:background="#aaa" />
-
-</LinearLayout>
+</ScrollView>
